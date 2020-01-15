@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class MyCharacterScript : MonoBehaviour
 {
+    [SerializeField]
     protected Joystick joystick;
 
     protected ActionButtonScript joybuttonA;
 
     protected SpecialButtonScript joybuttonS;
+
+    [SerializeField]
+    private float Speed;
 
     protected bool action;
     protected bool special;

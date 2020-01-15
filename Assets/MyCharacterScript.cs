@@ -6,15 +6,19 @@ public class MyCharacterScript : MonoBehaviour
 {
     protected Joystick joystick;
 
-    protected ActionButtonScript joybutton;
+    protected ActionButtonScript joybuttonA;
+
+    protected SpecialButtonScript joybuttonS;
 
     protected bool action;
+    protected bool special;
 
     // Start is called before the first frame update
     void Start()
     {
         joystick = FindObjectOfType<Joystick>();
-        joybutton = FindObjectOfType<ActionButtonScript>();
+        joybuttonA = FindObjectOfType<ActionButtonScript>();
+        joybuttonS = FindObjectOfType<SpecialButtonScript>();
     }
 
     // Update is called once per frame
@@ -23,14 +27,24 @@ public class MyCharacterScript : MonoBehaviour
         var rigibody = GetComponent<Rigidbody>();
 
         rigibody.velocity = new Vector3(joystick.Horizontal * 100f, rigibody.velocity.y, joystick.Vertical * 100f);
-        if(!action && joybutton.Pressed)
+        
+        if(!action && joybuttonA.Pressed)
         {
-            Debug.Log("joybutton");
+            Debug.Log("joybuttonA");
             action = true;
         }
-        if(action && !joybutton.Pressed)
+        if(action && !joybuttonA.Pressed)
         {
             action = false;
+        }
+        if (!special && joybuttonS.Pressed)
+        {
+            Debug.Log("joybuttonS");
+            special = true;
+        }
+        if (special && !joybuttonS.Pressed)
+        {
+            special = false;
         }
     }
 }

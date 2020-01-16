@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
@@ -9,15 +11,16 @@ public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("OnPointerDown");
         Pressed = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        Debug.Log("OnPointerUp");
         Pressed = false;
+        SceneManager.LoadScene("superMarket");
     }
-
-{
 
 
     // Start is called before the first frame update

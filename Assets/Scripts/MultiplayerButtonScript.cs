@@ -1,9 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class MultiplayerButtonScript : MonoBehaviour
+public class MultiplayerButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
+
+    public bool Pressed;
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Pressed = true;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Pressed = false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

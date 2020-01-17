@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
+public class CloseSubMenuCanvasScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
 
-    public bool Pressed;
+    protected bool Pressed;
+    protected GameObject menuCanvas;
+    protected GameObject subMenuCanvas;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -19,14 +21,15 @@ public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         Debug.Log("OnPointerUp");
         Pressed = false;
-        SceneManager.LoadScene("ChooseYourSide");
+        menuCanvas.SetActive(true);
+        subMenuCanvas.SetActive(false);
     }
-
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        menuCanvas = GameObject.FindGameObjectWithTag("MenuCanvas");
+        subMenuCanvas = GameObject.FindGameObjectWithTag("SubMenuCanvas");
     }
 
     // Update is called once per frame
@@ -34,6 +37,4 @@ public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         
     }
-
-
 }

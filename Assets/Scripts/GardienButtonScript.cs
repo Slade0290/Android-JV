@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
+public class GardienButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
 
     public bool Pressed;
@@ -19,9 +19,8 @@ public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         Debug.Log("OnPointerUp");
         Pressed = false;
-        SceneManager.LoadScene("ChooseYourSide");
+        SceneManager.LoadScene("Tutorial");
     }
-
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +33,4 @@ public class SoloButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         
     }
-
-
 }

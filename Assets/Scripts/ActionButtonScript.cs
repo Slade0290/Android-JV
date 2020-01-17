@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 
 public class ActionButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
@@ -11,13 +12,16 @@ public class ActionButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDown
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("OnPointerDown");
         Pressed = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        Debug.Log("OnPointerUp");
         Pressed = false;
     }
+
 
     // Start is called before the first frame update
     void Start()

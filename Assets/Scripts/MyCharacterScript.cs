@@ -37,6 +37,11 @@ public class MyCharacterScript : MonoBehaviour
         joystickV = joystick.Vertical;
     }
 
+    public void Action()
+    {
+        Debug.Log("bla bla bla touch button");
+    }
+
     // Update is called once per frame
     void Update()
     {

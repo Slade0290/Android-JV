@@ -17,6 +17,7 @@ public class BackButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public void OnPointerUp(PointerEventData eventData)
     {
         Pressed = false;
+        Time.timeScale = 1; 
         SceneManager.LoadScene("Menu");
     }
 

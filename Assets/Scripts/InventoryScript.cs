@@ -11,17 +11,24 @@ public class InventoryScript : MonoBehaviour, IPointerDownHandler
     [SerializeField]
     private GameObject Inventory;
 
+    [SerializeField]
+    private GameObject SubMenuCanvas;
+
     public void OnPointerDown(PointerEventData eventData)
     {
         if (InventoryIsOpen)
         {
             Inventory.SetActive(false);
+            SubMenuCanvas.SetActive(false);
             InventoryIsOpen = false;
+            Time.timeScale = 1; 
         }
         else
         {
             Inventory.SetActive(true);
+            SubMenuCanvas.SetActive(true);
             InventoryIsOpen = true;
+            Time.timeScale = 0; // No more update
         }
     }
 }

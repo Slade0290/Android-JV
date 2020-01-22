@@ -9,12 +9,8 @@ public class ButtonScript : MonoBehaviour
     public void ChangeSceneToSuperMarket()
     {
         Debug.Log("Pressed");
-        SceneManager.LoadScene("ChooseLevel");
+        SceneManager.LoadScene("superMarket");
     }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Debug.Log("OnPointerUp");
-        SceneManager.LoadScene("ChooseLevel");
-    }
+
 
 }

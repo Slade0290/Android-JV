@@ -8,47 +8,27 @@ public class PauseButtonScript : MonoBehaviour//, IPointerUpHandler, IPointerDow
 {
 
     public bool Pressed;
-    protected GameObject menuCanvas;
-    protected GameObject subMenuCanvas;
-
-    /*
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log("OnPointerDown");
-        Pressed = true;
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Debug.Log("OnPointerUp");
-        Pressed = false;
-        Time.timeScale = 0; // No more update
-        Debug.Log(subMenuCanvas.name);
-        subMenuCanvas.SetActive(true);
-        menuCanvas.SetActive(false);
-    }
-    */
+    
+    [SerializeField]
+    private GameObject menuCanvas;
+    
+    [SerializeField]
+    private GameObject subMenuCanvas;
 
     public void gamePause()
     {
-        Debug.Log("Pause");
         Pressed = false;
         Time.timeScale = 0; // No more update
-        Debug.Log(subMenuCanvas.name);
         subMenuCanvas.SetActive(true);
         menuCanvas.SetActive(false);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void gameUnpause()
     {
-        menuCanvas = GameObject.FindGameObjectWithTag("MenuCanvas");
-        subMenuCanvas = GameObject.FindGameObjectWithTag("SubMenuCanvas");
+        Pressed = false;
+        Time.timeScale = 1;
+        subMenuCanvas.SetActive(!true);
+        menuCanvas.SetActive(!false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

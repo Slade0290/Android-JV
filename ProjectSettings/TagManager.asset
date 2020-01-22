@@ -6,6 +6,9 @@ TagManager:
   tags:
   - SubMenuCanvas
   - MenuCanvas
+  - TShirt
+  - Pants
+  - Shoes
   layers:
   - Default
   - TransparentFX

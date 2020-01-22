@@ -5728,16 +5728,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fruitShelf (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 3682868446207820887, guid: 01bfeca6da10dc844bf77c0e666e313f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053430408720206942, guid: 01bfeca6da10dc844bf77c0e666e313f,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5063231634717031156, guid: dc8873c38c9ee904ab8e83ebc523bd01,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5792,6 +5782,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3682868446207820887, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053430408720206942, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8873c38c9ee904ab8e83ebc523bd01, type: 3}
@@ -8846,6 +8846,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 7524689339546046384, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: spawnAera
+      value: 
+      objectReference: {fileID: 1143629474}
     - target: {fileID: 7524689339546046385, guid: 01bfeca6da10dc844bf77c0e666e313f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8901,11 +8911,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
-        type: 3}
-      propertyPath: spawnAera
-      value: 
-      objectReference: {fileID: 1143629474}
     - target: {fileID: 1307256114066223856, guid: 01bfeca6da10dc844bf77c0e666e313f,
         type: 3}
       propertyPath: m_Name

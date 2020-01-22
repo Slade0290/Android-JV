@@ -24,9 +24,4 @@ public class InventoryScript : MonoBehaviour, IPointerDownHandler
             InventoryIsOpen = true;
         }
     }
-
-    void Start()
-    {
-        //Inventory.SetActive(false);
-    }
 }

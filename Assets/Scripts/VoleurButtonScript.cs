@@ -19,7 +19,7 @@ public class VoleurButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDown
     {
         Debug.Log("OnPointerUp");
         Pressed = false;
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("ChooseLevel");
     }
 
     // Start is called before the first frame update

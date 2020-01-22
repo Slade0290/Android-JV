@@ -19,7 +19,7 @@ public class GardienButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDow
     {
         Debug.Log("OnPointerUp");
         Pressed = false;
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("ChooseLevel");
     }
 
     // Start is called before the first frame update

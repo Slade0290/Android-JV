@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class PauseButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
+public class PauseButtonScript : MonoBehaviour//, IPointerUpHandler, IPointerDownHandler
 {
 
     public bool Pressed;
     protected GameObject menuCanvas;
     protected GameObject subMenuCanvas;
 
+    /*
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDown");
@@ -22,6 +23,18 @@ public class PauseButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownH
         Debug.Log("OnPointerUp");
         Pressed = false;
         Time.timeScale = 0; // No more update
+        Debug.Log(subMenuCanvas.name);
+        subMenuCanvas.SetActive(true);
+        menuCanvas.SetActive(false);
+    }
+    */
+
+    public void gamePause()
+    {
+        Debug.Log("Pause");
+        Pressed = false;
+        Time.timeScale = 0; // No more update
+        Debug.Log(subMenuCanvas.name);
         subMenuCanvas.SetActive(true);
         menuCanvas.SetActive(false);
     }

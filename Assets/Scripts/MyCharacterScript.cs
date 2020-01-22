@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class MyCharacterScript : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject PlayerTShirt1, PlayerTShirt2, PlayerTShirt3;
+
+    [SerializeField]
+    private GameObject PlayerPants1, PlayerPants2;
+
+    [SerializeField]
+    private GameObject PlayerShoes1, PlayerShoes2;
+
     protected Joystick joystick;
 
     protected ActionButtonScript joybuttonA;
@@ -27,6 +36,16 @@ public class MyCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerTShirt1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
+        PlayerTShirt2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
+        PlayerTShirt3.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
+        
+        PlayerPants1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.pantsColor);
+        PlayerPants2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.pantsColor);
+        
+        PlayerShoes1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.shoesColor);
+        PlayerShoes2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.shoesColor);
+
         joystick = FindObjectOfType<Joystick>();
         joybuttonA = FindObjectOfType<ActionButtonScript>();
         joybuttonS = FindObjectOfType<SpecialButtonScript>();
@@ -35,6 +54,14 @@ public class MyCharacterScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         joystickH = joystick.Horizontal;
         joystickV = joystick.Vertical;
+    }
+    
+    public static Color hexToColor(string hex)
+    {
+        return new Color32(byte.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber),
+                            byte.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber),
+                            byte.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber),
+                            255);
     }
 
     public void Action()

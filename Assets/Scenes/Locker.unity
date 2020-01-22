@@ -1722,8 +1722,43 @@ PrefabInstance:
     - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt1
+      value: 
+      objectReference: {fileID: 2108474314}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt2
+      value: 
+      objectReference: {fileID: 1765345822}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt3
+      value: 
+      objectReference: {fileID: 1538741680}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerPants1
+      value: 
+      objectReference: {fileID: 1139503190}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerPants2
+      value: 
+      objectReference: {fileID: 1362237153}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerShoes1
+      value: 
+      objectReference: {fileID: 718734759}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerShoes2
+      value: 
+      objectReference: {fileID: 645107809}
     - target: {fileID: 7524689338672792556, guid: 01bfeca6da10dc844bf77c0e666e313f,
         type: 3}
       propertyPath: m_TagString

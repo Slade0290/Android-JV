@@ -67,7 +67,6 @@ public class ColorClothesButtonScript : MonoBehaviour
 
     public void backButton()
     {
-        Debug.Log("Ta grand mere");
         SceneManager.LoadScene("Menu");
     }
 
@@ -80,16 +79,19 @@ public class ColorClothesButtonScript : MonoBehaviour
             PlayerTShirt1.GetComponent<Renderer>().material.color = hexToColor(color);
             PlayerTShirt2.GetComponent<Renderer>().material.color = hexToColor(color);
             PlayerTShirt3.GetComponent<Renderer>().material.color = hexToColor(color);
+            CharacterColorPref.tshirtColor = color;
         }
         if (Pants)
         {
             PlayerPants1.GetComponent<Renderer>().material.color = hexToColor(color);
             PlayerPants2.GetComponent<Renderer>().material.color = hexToColor(color);
+            CharacterColorPref.pantsColor = color;
         }
         if(Shoes)
         {
             PlayerShoes1.GetComponent<Renderer>().material.color = hexToColor(color);
             PlayerShoes2.GetComponent<Renderer>().material.color = hexToColor(color);
+            CharacterColorPref.shoesColor = color;
         }
     }
 

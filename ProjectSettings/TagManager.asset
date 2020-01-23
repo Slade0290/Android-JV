@@ -12,6 +12,7 @@ TagManager:
   - Shoes
   - spawn
   - GSpawn
+  - Items
   layers:
   - Default
   - TransparentFX

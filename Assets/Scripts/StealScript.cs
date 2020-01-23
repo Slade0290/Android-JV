@@ -20,61 +20,41 @@ public class StealScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Childrens = GetComponentsInChildren<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(ButtonA != null)
+        if (ButtonA != null)
         {
             Pressed = ButtonA.GetComponent<ActionButtonScript>().Pressed;
-            if (canSteal && Pressed)
+            if (canSteal && Pressed && !hasSteal)
             {
-                Debug.Log("stole");
-                CharacterColorPref.score += 50;
-                hasSteal = true;
-                Pressed = false;
-            }
-        }
-
-        if (hasSteal)
-        {
-            //Items = FindComponentInChildWithTag<Component>(gameObject, "Items");
-
-            //Items.gameObject.SetActive(false);
-
-            Childrens = GetComponentsInChildren<Transform>();
-            if(Childrens != null)
-            {
-                foreach (var Children in Childrens)
+                if (Childrens != null)
                 {
-                    if (Children.tag == "Items")
+                    foreach (var Children in Childrens)
                     {
-                        Children.localScale = new Vector3(0, 0, 0);
+                        if (Children.tag == "Items")
+                        {
+                            Children.localScale = new Vector3(0, 0, 0);
+                            hasSteal = true;
+                        }
                     }
                 }
-            }
-        }
-    }
+                CharacterColorPref.score += 50;
+                Pressed = false;
 
-    /*public Component FindComponentInChildWithTag(this GameObject parent, string tag)
-    {
-        Transform t = parent.transform;
-        foreach (Transform tr in t)
-        {
-            if (tr.tag == tag)
-            {
-                return tr.GetComponent();
             }
         }
-        return default;
-    }*/
+
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.tag);
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             canSteal = true;
         }

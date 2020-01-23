@@ -19,6 +19,7 @@ public class VoleurButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDown
     {
         Debug.Log("OnPointerUp");
         Pressed = false;
+        CharacterColorPref.chosenSide = "Voleur";
         SceneManager.LoadScene("ChooseLevel");
     }
 

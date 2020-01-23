@@ -19,6 +19,7 @@ public class GardienButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDow
     {
         Debug.Log("OnPointerUp");
         Pressed = false;
+        CharacterColorPref.chosenSide = "Gardien";
         SceneManager.LoadScene("ChooseLevel");
     }
 

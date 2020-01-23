@@ -455,8 +455,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt1
+      value: 
+      objectReference: {fileID: 50244783}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt2
+      value: 
+      objectReference: {fileID: 50244782}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt3
+      value: 
+      objectReference: {fileID: 50244781}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerPants1
+      value: 
+      objectReference: {fileID: 50244780}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerPants2
+      value: 
+      objectReference: {fileID: 50244779}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerShoes1
+      value: 
+      objectReference: {fileID: 50244778}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerShoes2
+      value: 
+      objectReference: {fileID: 50244777}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01bfeca6da10dc844bf77c0e666e313f, type: 3}
+--- !u!1 &50244777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338901607756, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50244778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338909562629, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50244779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689340701130360, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50244780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689339866849529, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50244781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338786440604, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50244782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689340495124302, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &50244783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338672792556, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50244776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &596065582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1410,7 @@ GameObject:
   - component: {fileID: 1858365646}
   - component: {fileID: 1858365648}
   - component: {fileID: 1858365647}
+  - component: {fileID: 1858365649}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1395,6 +1473,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858365645}
   m_CullTransparentMesh: 0
+--- !u!95 &1858365649
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858365645}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 219402253c4e4124f80586f0926401a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2011519005
 GameObject:
   m_ObjectHideFlags: 0

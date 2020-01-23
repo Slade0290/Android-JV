@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
-    public void ChangeSceneToSuperMarket()
+    public void ChangeSceneToSuperMarket(int level)
     {
         Debug.Log("Pressed");
+        CharacterColorPref.chosenLevel = level;
         SceneManager.LoadScene("superMarket");
     }
 

@@ -602,11 +602,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1447122681}
         m_MethodName: ChangeSceneToSuperMarket
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -730,11 +730,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1447122681}
         m_MethodName: ChangeSceneToSuperMarket
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -858,11 +858,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1447122681}
         m_MethodName: ChangeSceneToSuperMarket
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -915,6 +915,7 @@ GameObject:
   - component: {fileID: 1158205460}
   - component: {fileID: 1158205459}
   - component: {fileID: 1158205461}
+  - component: {fileID: 1158205462}
   m_Layer: 5
   m_Name: SubTitle
   m_TagString: Untagged
@@ -994,6 +995,25 @@ ScaleConstraint:
   m_IsContraintActive: 1
   m_IsLocked: 1
   m_Sources: []
+--- !u!95 &1158205462
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158205457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 219402253c4e4124f80586f0926401a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1194487575
 GameObject:
   m_ObjectHideFlags: 0

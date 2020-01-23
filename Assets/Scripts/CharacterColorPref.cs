@@ -9,5 +9,6 @@ public static class CharacterColorPref
     public static string shoesColor = "000000";
     public static int chosenLevel = 0;
     public static string chosenSide = "";
+    public static int score = 0;
 
 }

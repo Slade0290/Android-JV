@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MyCharacterScript : MonoBehaviour
 {
+    private Animator Anim;
+    
     protected Joystick joystick;
 
     protected ActionButtonScript joybuttonA;
@@ -35,6 +37,8 @@ public class MyCharacterScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         joystickH = joystick.Horizontal;
         joystickV = joystick.Vertical;
+
+        Anim = GetComponent<Animator>();
     }
 
     public void Action()
@@ -79,6 +83,11 @@ public class MyCharacterScript : MonoBehaviour
 
             float step = rotationSpeed * Time.deltaTime;
             player.transform.rotation = Quaternion.RotateTowards(lookRotation, transform.rotation, step);
+            Anim.Play("Walk");
+        }
+        else
+        {
+            Anim.Play("Idle");
         }
     }
 }

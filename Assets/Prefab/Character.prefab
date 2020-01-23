@@ -1438,6 +1438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77fbcc9b58c2aa7468b9ea5b13c8367d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Anim: {fileID: 0}
   rotationSpeed: 5
   spawnAera: {fileID: 0}
 --- !u!136 &2562681312850088736

@@ -7,12 +7,10 @@ using TMPro;
 
 public class GameDesign : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject timer;
-
     private float timeLeft = 60.0f;
 
     public TextMeshProUGUI text;
+    public TextMeshProUGUI score;
 
 
     // Start is called before the first frame update
@@ -30,5 +28,6 @@ public class GameDesign : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        score.text = "Score : " + CharacterColorPref.score.ToString();
     }
 }

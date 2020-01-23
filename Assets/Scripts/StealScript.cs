@@ -9,6 +9,8 @@ public class StealScript : MonoBehaviour
 
     private bool canSteal = false;
 
+    private bool hasSteal = false;
+
     private bool Pressed;
 
     // Start is called before the first frame update
@@ -27,7 +29,13 @@ public class StealScript : MonoBehaviour
             {
                 Debug.Log("stole");
                 CharacterColorPref.score += 50;
+                hasSteal = true;
             }
+        }
+
+        if (hasSteal)
+        {
+
         }
     }
 

@@ -40818,8 +40818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5019ed0a996ddf24bb67e9cf71c25bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
   text: {fileID: 1797787216}
+  score: {fileID: 1640071377}
 --- !u!4 &1164515353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9204231336035091492, guid: 0303114fa8fbe7742bfe852602295732,

@@ -19,7 +19,7 @@ public class MyCharacterScript : MonoBehaviour
 
     protected ActionButtonScript joybuttonA;
 
-    protected SpecialButtonScript joybuttonS;
+    //protected SpecialButtonScript joybuttonS;
 
     protected bool action;
     protected bool special;
@@ -53,7 +53,7 @@ public class MyCharacterScript : MonoBehaviour
 
         joystick = FindObjectOfType<Joystick>();
         joybuttonA = FindObjectOfType<ActionButtonScript>();
-        joybuttonS = FindObjectOfType<SpecialButtonScript>();
+        //joybuttonS = FindObjectOfType<SpecialButtonScript>();
 
         transform.position = spawnAera.position;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -113,8 +113,8 @@ public class MyCharacterScript : MonoBehaviour
         if (!(joystickH == inputX && joystickV == inputZ))
         {
             Vector3 lookDirection = new Vector3(inputX, 0, inputZ);
-            Debug.Log("lookDirection : " + lookDirection);
-            Debug.Log("player.transform.rotation : " + player.transform.rotation);
+            //Debug.Log("lookDirection : " + lookDirection);
+            //Debug.Log("player.transform.rotation : " + player.transform.rotation);
             Quaternion lookRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
 
             float step = rotationSpeed * Time.deltaTime;

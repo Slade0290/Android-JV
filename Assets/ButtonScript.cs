@@ -13,5 +13,10 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene("superMarket");
     }
 
+    public void ChangeSceneToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 
 }

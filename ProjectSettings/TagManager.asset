@@ -11,6 +11,7 @@ TagManager:
   - Pants
   - Shoes
   - spawn
+  - GSpawn
   layers:
   - Default
   - TransparentFX

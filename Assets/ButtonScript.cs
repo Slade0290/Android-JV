@@ -10,7 +10,7 @@ public class ButtonScript : MonoBehaviour
     {
         Debug.Log("Pressed");
         CharacterColorPref.chosenLevel = level;
-        SceneManager.LoadScene("superMarket");
+        SceneManager.LoadScene("Loading");
     }
 
     public void ChangeSceneToMenu()

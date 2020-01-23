@@ -6,15 +6,17 @@ public class HandleSheet : MonoBehaviour
 {
     private Animator Anim;
 
-    private ActionButtonScript ButtonA;
+    [SerializeField]
+    private GameObject ButtonA;
 
     private bool canOpen = false;
 
     private bool isOpen = false;
 
+    private bool Pressed;
+
     private void Start()
     {
-        ButtonA = GetComponent<ActionButtonScript>();
         Anim = GetComponent<Animator>();
     }
 
@@ -23,17 +25,20 @@ public class HandleSheet : MonoBehaviour
     {
         if (canOpen)
         {
-            if (isOpen && (ButtonA.Pressed == true))
+            if (ButtonA != null)
             {
-                Debug.Log("fermeture");
-                Anim.Play("CloseSheet");
-                isOpen = false;
+                Pressed = ButtonA.GetComponent<ActionButtonScript>().Pressed;
+                if (isOpen && Pressed)
+                {
+                    Anim.Play("CloseSheet");
+                    isOpen = false;
 
-            }else if(!isOpen && (ButtonA.Pressed == true))
-            {
-                Debug.Log("ouverture");
-                Anim.Play("OpenSheet");
-                isOpen = true;
+                }
+                else if (!isOpen && Pressed)
+                {
+                    Anim.Play("OpenSheet");
+                    isOpen = true;
+                }
             }
         }
     }

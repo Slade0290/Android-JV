@@ -23,7 +23,7 @@ public class PnJGeneratorScript : MonoBehaviour
             GameObject tmp = Instantiate(PnJ);
             tmp.transform.position = SpawnBeaconList[i].transform.position;
         }
-        GSpawnBeaconList = GameObject.FindGameObjectsWithTag("Gspawn");
+        GSpawnBeaconList = GameObject.FindGameObjectsWithTag("GSpawn");
         for (int i = 0; i < GSpawnBeaconList.Length; i++)
         {
             GameObject tmp = Instantiate(GPnJ);

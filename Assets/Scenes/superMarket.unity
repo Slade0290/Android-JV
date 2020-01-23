@@ -46056,7 +46056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1768463383}
-  - {fileID: 494344541}
+  - {fileID: 64356739}
   - {fileID: 1568767151}
   - {fileID: 1323052975}
   - {fileID: 1320983432}
@@ -46064,12 +46064,12 @@ Transform:
   - {fileID: 607033443}
   - {fileID: 604212512}
   - {fileID: 544678974}
+  - {fileID: 494344541}
   - {fileID: 274878311}
   - {fileID: 225025970}
   - {fileID: 201887046}
   - {fileID: 191644598}
   - {fileID: 72466236}
-  - {fileID: 64356739}
   m_Father: {fileID: 504505566}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55058,7 +55058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1600428925
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57513,6 +57513,41 @@ PrefabInstance:
       propertyPath: spawnAera
       value: 
       objectReference: {fileID: 1143629474}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt1
+      value: 
+      objectReference: {fileID: 1647249621}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt2
+      value: 
+      objectReference: {fileID: 1647249620}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerTShirt3
+      value: 
+      objectReference: {fileID: 1647249619}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerPants1
+      value: 
+      objectReference: {fileID: 1647249618}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerPants2
+      value: 
+      objectReference: {fileID: 1647249617}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerShoes1
+      value: 
+      objectReference: {fileID: 1647249616}
+    - target: {fileID: 6955428080515428331, guid: 01bfeca6da10dc844bf77c0e666e313f,
+        type: 3}
+      propertyPath: PlayerShoes2
+      value: 
+      objectReference: {fileID: 1647249615}
     - target: {fileID: 7524689339546046385, guid: 01bfeca6da10dc844bf77c0e666e313f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57575,6 +57610,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01bfeca6da10dc844bf77c0e666e313f, type: 3}
+--- !u!1 &1647249615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338901607756, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647249616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338909562629, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647249617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689340701130360, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647249618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689339866849529, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647249619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338786440604, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647249620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689340495124302, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647249621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524689338672792556, guid: 01bfeca6da10dc844bf77c0e666e313f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647249614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1650668135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9204231336035091492, guid: 0303114fa8fbe7742bfe852602295732,

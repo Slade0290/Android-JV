@@ -23,9 +23,9 @@ public class StealScript : MonoBehaviour
         if(ButtonA != null)
         {
             Pressed = ButtonA.GetComponent<ActionButtonScript>().Pressed;
-            //Debug.Log(Pressed);
             if (canSteal && Pressed)
             {
+                Debug.Log("stole");
                 CharacterColorPref.score += 50;
             }
         }

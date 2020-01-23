@@ -38,15 +38,18 @@ public class MyCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerTShirt1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
-        PlayerTShirt2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
-        PlayerTShirt3.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
-        
-        PlayerPants1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.pantsColor);
-        PlayerPants2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.pantsColor);
-        
-        PlayerShoes1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.shoesColor);
-        PlayerShoes2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.shoesColor);
+        if (PlayerTShirt1 != null)
+        {
+            PlayerTShirt1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
+            PlayerTShirt2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
+            PlayerTShirt3.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.tshirtColor);
+
+            PlayerPants1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.pantsColor);
+            PlayerPants2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.pantsColor);
+
+            PlayerShoes1.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.shoesColor);
+            PlayerShoes2.GetComponent<Renderer>().material.color = hexToColor(CharacterColorPref.shoesColor);
+        }
 
         joystick = FindObjectOfType<Joystick>();
         joybuttonA = FindObjectOfType<ActionButtonScript>();
@@ -77,7 +80,11 @@ public class MyCharacterScript : MonoBehaviour
     void Update()
     {
         var rigibody = GetComponent<Rigidbody>();
-        rigibody.velocity = new Vector3(joystick.Horizontal * 10f, rigibody.velocity.y, joystick.Vertical * 10f);
+        if(rigibody != null)
+        {
+            rigibody.velocity = new Vector3(joystick.Horizontal * 10f, rigibody.velocity.y, joystick.Vertical * 10f);
+        }
+
 
         if (!action && joybuttonA.Pressed)
         {

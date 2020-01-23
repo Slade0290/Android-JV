@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5063231634717031156}
   - component: {fileID: 7431809698194329580}
-  - component: {fileID: 7934689260802154330}
+  - component: {fileID: 3853538776922838938}
   m_Layer: 0
   m_Name: fruitShelf
   m_TagString: Untagged
@@ -61,7 +61,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 1, z: 2.7}
   m_Center: {x: 1.35, y: -0.5, z: 0}
---- !u!114 &7934689260802154330
+--- !u!114 &3853538776922838938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,10 +70,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 301995396993684098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9c54c1f3099cb419dc9f1624967e74, type: 3}
+  m_Script: {fileID: 11500000, guid: db46f9838a20b754eb8c2e4b18a0193d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pressed: 0
+  ButtonA: {fileID: 3194539544418193035, guid: 3985141f8bb0f534996586880c8e7439, type: 3}
 --- !u!1 &3827542812305957167
 GameObject:
   m_ObjectHideFlags: 0

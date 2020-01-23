@@ -718,7 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529877346685592147}
   - component: {fileID: 5815030261562778213}
-  - component: {fileID: 8442479190531559493}
+  - component: {fileID: 2778804734523682218}
   m_Layer: 0
   m_Name: freezer
   m_TagString: Untagged
@@ -760,7 +760,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 10, z: 3}
   m_Center: {x: 0, y: 30, z: -11.4}
---- !u!114 &8442479190531559493
+--- !u!114 &2778804734523682218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -769,10 +769,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529877346685592108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9c54c1f3099cb419dc9f1624967e74, type: 3}
+  m_Script: {fileID: 11500000, guid: db46f9838a20b754eb8c2e4b18a0193d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pressed: 0
+  ButtonA: {fileID: 3194539544418193035, guid: 3985141f8bb0f534996586880c8e7439, type: 3}
 --- !u!1 &1529877346745934560
 GameObject:
   m_ObjectHideFlags: 0

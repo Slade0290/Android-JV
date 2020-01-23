@@ -13,7 +13,7 @@ public class StealScript : MonoBehaviour
 
     private bool Pressed;
 
-    private GameObject[] Childrens;
+    private Transform[] Childrens;
 
     private Component Items;
 
@@ -44,14 +44,14 @@ public class StealScript : MonoBehaviour
 
             //Items.gameObject.SetActive(false);
 
-            Childrens = GetComponentsInChildren<GameObject>();
+            Childrens = GetComponentsInChildren<Transform>();
             if(Childrens != null)
             {
                 foreach (var Children in Childrens)
                 {
                     if (Children.tag == "Items")
                     {
-                        Children.SetActive(false);
+                        Children.localScale = new Vector3(0, 0, 0);
                     }
                 }
             }

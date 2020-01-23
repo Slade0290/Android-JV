@@ -95,6 +95,7 @@ public class MyCharacterScript : MonoBehaviour
         {
             action = false;
         }
+        /*
         if (!special && joybuttonS.Pressed)
         {
             Debug.Log("joybuttonS");
@@ -104,6 +105,7 @@ public class MyCharacterScript : MonoBehaviour
         {
             special = false;
         }
+        */
 
         //Character rotation
         float inputZ = joystick.Horizontal;

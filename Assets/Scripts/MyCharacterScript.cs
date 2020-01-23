@@ -35,6 +35,8 @@ public class MyCharacterScript : MonoBehaviour
     private float joystickH;
     private float joystickV;
 
+    private Rigidbody r;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,8 +63,10 @@ public class MyCharacterScript : MonoBehaviour
         joystickV = joystick.Vertical;
 
         Anim = GetComponent<Animator>();
+        r = GetComponent<Rigidbody>();
+
     }
-    
+
     public static Color hexToColor(string hex)
     {
         return new Color32(byte.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber),
@@ -79,10 +83,9 @@ public class MyCharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var rigibody = GetComponent<Rigidbody>();
-        if(rigibody != null)
+        if(r != null)
         {
-            rigibody.velocity = new Vector3(joystick.Horizontal * 10f, rigibody.velocity.y, joystick.Vertical * 10f);
+            r.velocity = new Vector3(joystick.Horizontal * 10f, r.velocity.y, joystick.Vertical * 10f);
         }
 
 
